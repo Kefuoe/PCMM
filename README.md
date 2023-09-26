@@ -1,2 +1,2 @@
 # PCMM
-People centred mining modernization
+Creating a People centred mining modernization application.
