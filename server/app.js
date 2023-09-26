@@ -25,7 +25,10 @@ app.get('/', (request, response) => {
   response.json({ info: 'Node.js, Express, and Postgres API' })
 })
 
-app.get('/mines', db.getUsers)
+//app.get('/mines', db.getUsers)
+
+require("./routes/mines.routes")(app);
+require("./routes/production_figures.routes")(app);
 
 app.listen(port, () =>{
     console.log(`running on ${port}`)
