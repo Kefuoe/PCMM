@@ -5,6 +5,7 @@ module.exports = app => {
   
     router.get("/mines",mines.getMines);
     router.get("/mines/:id", mines.getMineById);
+    router.get("/mines/contacts/:id", mines.getMineContact);
   
    //app.get('/mines', db.getUsers)
    app.use("/api", router);
