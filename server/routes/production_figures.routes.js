@@ -5,7 +5,7 @@ module.exports = app => {
   
     router.get("/figures",figures.getProductionFigures);
     router.get("/figures/:material", figures.getMineByMaterial);
-  
+    router.get("/figures/material/:id", figures.getProductById);
    //app.get('/mines', db.getUsers)
    app.use("/api", router);
   };
