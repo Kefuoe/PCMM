@@ -3,9 +3,9 @@ module.exports = app => {
   
     var router = require("express").Router();
   
-    router.get("/figures",figures.getProductionFigures);
+   // router.get("/figures",figures.getProductionFigures);
     router.get("/figures/:material", figures.getMineByMaterial);
     router.get("/figures/material/:id", figures.getProductById);
-   //app.get('/mines', db.getUsers)
+    router.get("/figures/",figures.getProductionFiguresFilter);
    app.use("/api", router);
   };
